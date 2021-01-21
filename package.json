@@ -1,0 +1,45 @@
+{
+  "name": "WxSocial",
+  "version": "1.0.0-edge",
+  "description": "Electron webapp for WxSocial",
+  "main": "src/index.js",
+  "scripts": {
+    "appveyor-build": "electron-builder build --publish onTagOrDraft",
+    "appveyor-build-mac": "electron-builder build --mac --publish onTagOrDraft",
+    "appveyor-build-win": "electron-builder build --win --publish onTagOrDraft",
+    "build": "electron-builder build --publish never",
+    "build-armv7l": "electron-builder build --armv7l --publish never",
+    "build-mac": "electron-builder build --mac --publish never",
+    "build-snap": "electron-builder --linux snap --publish never",
+    "build-win": "electron-builder build --win --publish never",
+    "lint": "eslint src/index.js src/preload.js --fix",
+    "package": "electron-packager . --publish never",
+    "package-mac": "electron-packager . --mac --publish never",
+    "package-snap": "electron-packager . --linux snap --publish never",
+    "package-win": "electron-packager . --win --publish never",
+    "run": "electron .",
+    "start": "electron .",
+    "test": "eslint src/index.js src/preload.js"
+  },
+  "build": {
+    "icon": "data/wxsocial.png"
+  },
+  "repository": "git+https://github.com/ItzSwirlz/wxsocial-webapp.git",
+  "author": "Joshua Peisach",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ItzSwirlz/wxsocial-webapp/issues"
+  },
+  "homepage": "https://github.com/ItzSwirlz/wxsocial-webapp#readme",
+  "dependencies": {
+    "electron-packager": "^15.2.0",
+    "electron-updater": "^4.3.5",
+    "path": "^0.12.7",
+    "process": "^0.11.10"
+  },
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "electron-builder": "^22.9.1",
+    "eslint": "^7.16.0"
+  }
+}

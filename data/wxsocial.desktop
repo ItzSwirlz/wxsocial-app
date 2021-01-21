@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WxSocial
+Comment=The leading social networking platform for weather connecting enthusiasts, students, chasers, and meteorologists alike.
+GenericName=WxSocial Webapp
+Exec=/usr/bin/wxsocial
+Icon=wxsocial
+Type=Application
+Categories=Network;Internet;Entertainment
+Path=/usr/share/wxsocial-webapp
